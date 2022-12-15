@@ -8,5 +8,5 @@ create table animals
 	Date_of_birth date,
 	Escape_attempts integer,
 	Neutered boolean,
-	Weight_kg real
+	Weight_kg decimal
 );

@@ -13,3 +13,37 @@ INSERT INTO public.animals(
 	(9, 'Boarmon', '07-06-2005', 7, true, 20.4),
 	(10, 'Blossom', '1998-10-13', 3, true, 17),
         (11, 'Ditto', '2022-05-14', 4, true, 22);
+
+
+INSERT INTO Public.owners(
+	name, age)
+	VALUES ('Sam Smith', 34),
+	('Jennifer Orwell', 19),
+	('Bob', 45),
+	('Melody Pond', 77),
+	('Dean Winchester', 14),
+	VALUES ('Jodie Whittaker', 38);
+
+INSERT INTO Public.species(
+	name)
+	VALUES ('Pokemon'),
+	('Digimon');
+
+UPDATE animals SET species_id = 2 WHERE name LIKE '%mon';
+
+UPDATE animals SET species_id = 1 WHERE name NOT LIKE '%mon';
+
+UPDATE animals SET owner_id = 1 WHERE name = 'Agumon';
+
+UPDATE animals SET owner_id = 2 WHERE name = 'Gabumon';
+UPDATE animals SET owner_id = 2 WHERE name = 'Pikachu';
+
+UPDATE animals SET owner_id = 3 WHERE name = 'Devimon';
+UPDATE animals SET owner_id = 3 WHERE name = 'Plantmon';
+
+UPDATE animals SET owner_id = 4 WHERE name = 'Charmander'; 
+UPDATE animals SET owner_id = 4 WHERE name = 'Squirtle';
+UPDATE animals SET owner_id = 4 WHERE name = 'Blossom';
+
+UPDATE animals SET owner_id = 5 WHERE name = 'Angemon';
+UPDATE animals SET owner_id = 5 WHERE name = 'Boarmon';

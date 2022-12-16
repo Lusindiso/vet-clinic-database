@@ -1,12 +1,15 @@
 /* Database schema to keep the structure of entire database. */
-create database vet_clinic
+CREATE database vet_clinic
 
-create table animals
+CREATE TABLE animals
 (
-	Id integer primary key,
-	Name varchar(50),
-	Date_of_birth date,
-	Escape_attempts integer,
-	Neutered boolean,
-	Weight_kg decimal
+  id integer primary key,
+  name varchar(50),
+  date_of_birth date,
+  escape_attempts integer,
+  neutered boolean,
+  weight_kg real
 );
+
+ALTER TABLE animals  
+ADD COLUMN species varchar(100);

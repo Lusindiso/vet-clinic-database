@@ -67,7 +67,7 @@ SELECT species, AVG(escape_attempts) FROM animals
 WHERE date_of_birth BETWEEN '1990-01-01' AND '2000-12-31'
 GROUP BY species;
 
-LECT a.name FROM animals as a
+SELECT a.name FROM animals as a
 INNER JOIN owners as o 
 ON o.id = a.owner_id 
 WHERE o.name = 'Melody Pond';

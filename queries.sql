@@ -187,3 +187,9 @@ WHERE v.name = 'Maisy Smith'
 GROUP BY s.name
 ORDER BY specialty DESC 
 LIMIT 1;
+
+--Create queries to check performance
+
+EXPLAIN ANALYSE SELECT COUNT(*) FROM visits where animal_id = 4;
+
+EXPLAIN ANALYSE SELECT * FROM visits where vet_id = 2;
